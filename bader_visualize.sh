@@ -1,4 +1,5 @@
 #copy POSCAR and POTCAR into the folder
+#Make sure the POSCAR file has the elements symbol list in the first line and their count in line 6
 #open vith ase-gui and save POSCAR for cartesian
 
 touch poscar.vtf
@@ -13,7 +14,7 @@ eltsnum=`awk 'NR==6{print}' POSCAR `
 eltsnumarray=(`echo $eltsnum`)
 
 #debug
-echo "$totelt $elts ${eltsarray[0]} $eltsnum ${eltsnumarray[0]}"
+#echo "$totelt $elts ${eltsarray[0]} $eltsnum ${eltsnumarray[0]}"
 #debug
 
 for((i=0;i<totelt;i++))
@@ -22,9 +23,9 @@ eltsvalencearray[$i]=`sed -n '/  PAW_PBE '"${eltsarray[$i]} "'/{n;p;}' POTCAR`
 done
 
 #debug
-echo "${eltsvalencearray[0]}"
-echo "${eltsvalencearray[1]}"
-echo "${eltsvalencearray[2]}"
+#echo "${eltsvalencearray[0]}"
+#echo "${eltsvalencearray[1]}"
+#echo "${eltsvalencearray[2]}"
 #debug
 
 
