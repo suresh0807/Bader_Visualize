@@ -18,4 +18,4 @@ Steps:
 5. use the colorbar extention in VMD to add it to the graphic
 
 
-14.5.20: Added minmax.sh script which prints the largest and smallest atom charges to the terminal. It is called by the 'bader_visualize' script.
+14.5.20: Added minmax.sh script which prints the largest and smallest atom charges to the terminal along with the total charge. It is called by the 'bader_visualize' script.
