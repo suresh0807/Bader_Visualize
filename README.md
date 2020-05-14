@@ -4,6 +4,7 @@ Prepares an atomistic snapshot (.vtf file) with atoms colored according to their
 Pre requisites:
 
 Needs to have run bader program first and have ACF.dat in the folder. 
+POSCAR: Element symbols in the first line and atom count in 6th line.
 
 What does it do:
 
