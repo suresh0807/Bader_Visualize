@@ -15,3 +15,6 @@ Steps:
 3. run './bader_visualize'
 4. open poscar.vtf in VMD and choose beta for coloring scheme
 5. use the colorbar extention in VMD to add it to the graphic
+
+
+14.5.20: Added minmax.sh script which prints the largest and smallest atom charges to the terminal. It is called by the 'bader_visualize' script.
